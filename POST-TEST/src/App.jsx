@@ -3,21 +3,49 @@ import './App.css';
 import Post from './components/Post';
 
 function App() {
-  const [people, setPeople] = useState([
-    { name: 'Samee', description: 'Excited to learn React!' },
-    { name: 'John', description: 'Looking forward to JavaScript!' },
-    { name: 'Alice', description: 'Passionate about CSS!' },
-  ]);
+
+  const students = [
+    {
+      name: 'Aaa Bbb',
+      description: 'Lorem Ipsum',
+      likes: '19981'
+    },
+    {
+      name: 'djksaljd dsajidsji',
+      description: 'Lorem Ipsum TWOOOO',
+      likes: '-192193'
+    },
+    {
+      name: 'Aaa Bbb',
+      description: 'Lorem Ipsum THREEE',
+      likes: '31337'
+    }
+  ]
 
   return (
-    <> 
-      <h1>Welcome to Web 02</h1>
-      <h1>Write a post about what you're excited to learn about :P</h1>
-      {people.map((person, index) => (
-        <Post key={index} name={person.name} description={person.description} />
-      ))}
+    <>
+      <h1>Welcome to Web102</h1>
+      <h2>Write a post about what you are excited to learn about :P</h2>
+      {
+        students.map((student, i) => {
+          return (<Post 
+            name={student.name} 
+            key={i}
+            description={student.description} 
+            likes={student.likes} />)
+
+        })
+      }
+
     </>
-  );
+  )
 }
 
-export default App;
+export default App
+
+
+
+
+
+
+

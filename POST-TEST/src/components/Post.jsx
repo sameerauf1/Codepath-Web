@@ -1,12 +1,12 @@
-import React from 'react';
+function Post({ name, description, likes })  {
 
-const Post = ({ name, description }) => {
   return (
-    <section style={{ border: '3px solid white' }}>
-      <h3>{name}</h3>
-      <p>{description}</p>
+    <section style={{ border: '3px solid white', marginBottom: '8px' }}>
+        <h3>{name}</h3>
+        <h4>{description}</h4>
+        <p>Likes: {likes}</p>
     </section>
-  );
-};
+  )
+}
 
-export default Post;
+export default Post
