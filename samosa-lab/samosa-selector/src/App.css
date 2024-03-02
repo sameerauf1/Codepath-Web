@@ -29,7 +29,7 @@
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  color: purple;
+  color:  rgba(255, 255, 255, 0.87);
   cursor: pointer;
   margin-top: 10px;
 }
